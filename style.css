@@ -1,0 +1,87 @@
+.container{
+    text-align: center;
+    padding: 10px;
+}
+
+.header img{
+    display: inline;
+    width: 200px;
+    height: 200px;
+    border: 3px  solid white;
+    box-shadow: -4px 10px 27px grey;
+}
+.body_background{
+    background-image: url("background_login.jpg");
+    background-size: cover;
+    padding: 50px;
+}
+.header h2{
+    color: black;
+    font-weight: bold;   
+}
+.login_container{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: -5px 10px 27px grey;
+    width: 80%;
+    float: none;
+    margin: auto;
+}
+.header hr{
+    width: 500px;
+}
+.login_div input{
+    width: 60%;
+    margin: auto;
+}
+
+.color_white{
+    color: white !important;
+}
+
+.header_post_page hr{
+    width: 80%;
+}
+.header_post_page{
+    background-image: url("background.png");
+    background-size: cover;
+    text-align: center;
+    box-shadow: -5px 10px 27px grey;
+    padding: 10px;
+}
+
+.post_page_background{
+    background: linear-gradient(90deg, yellow, orange);
+}
+.uploadPost_div button{
+    padding: 10px;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.uploadPost_div button:hover{
+    color: black !important;
+    border-color: black !important;
+    box-shadow: 1px 10px 27px grey;
+}
+.modal-content{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#output{
+    padding: 10px;
+}
+.post_container{
+    padding: 10px;
+    background: white;
+    margin-top: 10px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 10px 27px grey;
+}
