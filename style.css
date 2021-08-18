@@ -24,12 +24,11 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: -5px 10px 27px grey;
-    width: 80%;
     float: none;
     margin: auto;
 }
 .header hr{
-    width: 500px;
+    width: 80%;
 }
 .login_div input{
     width: 60%;
@@ -54,7 +53,7 @@
 .post_page_background{
     background: linear-gradient(90deg, yellow, orange);
 }
-.uploadPost_div button{
+.uploadPost_div #button_upload{
     padding: 10px;
     font-weight: bold;
     background: transparent;
@@ -63,7 +62,7 @@
     border-radius: 10px;
     font-size: 20px;
 }
-.uploadPost_div button:hover{
+.uploadPost_div #button_upload:hover{
     color: black !important;
     border-color: black !important;
     box-shadow: 1px 10px 27px grey;

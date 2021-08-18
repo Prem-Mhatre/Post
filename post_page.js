@@ -29,6 +29,7 @@ function getData() { firebase.database().ref("/"+post_id).on('value', function(s
          message = post_data["message"];
          name = post_data["name"];
          like = post_data["like"];
+         counter = 0;
 
          title_with_tag = "<div class='post_container'><h2>"+title+"</h2>";
          message_with_tag = "<h4>" + message + "</h4><br>";
@@ -44,9 +45,9 @@ getData();
 function update_like(postid){
     button_id = postid;
     likes = document.getElementById(button_id).value;
-    upadate_likes = Number(likes) + 1;
+    update_likes = Number(likes) + 1;
     firebase.database().ref(post_id).child(postid).update({
-        like : upadate_likes
+        like : update_likes
     });
 }
 
