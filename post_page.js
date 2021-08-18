@@ -24,13 +24,11 @@ var firebaseConfig = {
 function getData() { firebase.database().ref("/"+post_id).on('value', function(snapshot) { document.getElementById("output").innerHTML = ""; snapshot.forEach(function(childSnapshot) { childKey  = childSnapshot.key; childData = childSnapshot.val(); if(childKey != "purpose") {
          firebase_post_id = childKey;
          post_data = childData;
-         console.log(firebase_post_id, post_data);
 
          title = post_data["title"];
          message = post_data["message"];
          name = post_data["name"];
          like = post_data["like"];
-         console.log(title, message, name);
 
          title_with_tag = "<div class='post_container'><h2>"+title+"</h2>";
          message_with_tag = "<h4>" + message + "</h4><br>";
@@ -39,6 +37,7 @@ function getData() { firebase.database().ref("/"+post_id).on('value', function(s
          span_with_tag = "<span class='glyphicon glyphicon-thumbs-up'>Like: "+like+"</span></button></div><br>";
          row = title_with_tag + message_with_tag +  name_with_tag + like_button + span_with_tag;
          document.getElementById("output").innerHTML += row;
+         document.getElementById("notification_sound").play();
       } });  }); }
 getData();
 
