@@ -84,3 +84,19 @@
     border-radius: 10px;
     box-shadow: 1px 10px 27px grey;
 }
+.footer{
+    width: 100%;
+    background: transparent;
+    height: 50px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.up_down_buttons{
+    position: fixed;
+    top: 510px;
+    right: 0px;
+}
+.up_down_button{
+    border-radius: 0px;
+}

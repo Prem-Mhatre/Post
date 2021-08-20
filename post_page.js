@@ -66,6 +66,8 @@ function upload(){
     else{
         document.getElementById("message_erro").innerHTML = "";
         document.getElementById("title_erro").innerHTML = "";
+        document.getElementById("message").value = "";
+        document.getElementById("postTitle").value = "";
         firebase.database().ref(post_id).push({
             title : title_input,
             message : message_input,

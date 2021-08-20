@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="post_page_background">
-        <div class="header header_post_page">
+        <div class="header header_post_page" id="header_nav">
             <button class="btn btn-danger" onclick="logout()" style="float: right;">Logout</button>
             <br>
             <br>
@@ -61,6 +61,12 @@
     <div class="container">
         <div id="output"></div>
     </div>
+    <div class="up_down_buttons">
+        <a href="#header_nav" class="btn btn-primary up_down_button up_button"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        <br>
+        <a href="#footer_nav" class="btn btn-primary up_down_button down_button"><span class="glyphicon glyphicon-chevron-down"></span></a>
+    </div>
+    <div class="footer" id="footer_nav"></div>
     <script src="post_page.js"></script>
 </body>
 </html>
