@@ -15,7 +15,7 @@ var firebaseConfig = {
 
     user = localStorage.getItem("post_user_name");
 
-    document.getElementById("user_name").innerHTML = "What's Your New message " + user + "!";
+    document.getElementById("user_name").innerHTML = "What's Your New Post " + user + "!";
 
     firebase.database().ref("/").child(post_id).update({
         purpose : "Adding Post"
